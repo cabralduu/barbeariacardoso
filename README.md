@@ -1,4 +1,4 @@
-# 💈 World Barber
+# 💈 Barbearia Cardoso
 
 Sistema web de agendamento online para barbearia. Permite que clientes agendem horários, consultem e cancelem agendamentos. O painel administrativo oferece controle completo da agenda, serviços, clientes e faturamento.
 
@@ -39,18 +39,18 @@ Sistema web de agendamento online para barbearia. Permite que clientes agendem h
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/cabralduu/worldbarber.git
-cd worldbarber
+git clone https://github.com/cabralduu/barbeariacardoso.git
+cd barbeariacardoso
 
 # 2. Configure o banco de dados
-# Importe o arquivo world_barber.sql no seu MySQL
+# Importe o arquivo barbeariacardoso.sql no seu MySQL
 
 # 3. Configure as credenciais
 cp config.example.php config.php
 # Edite o config.php com seus dados de acesso ao banco
 
 # 4. Inicie o servidor local e acesse
-# http://localhost/worldbarber
+# http://localhost/barbeariacardoso
 ```
 
 ---
@@ -73,7 +73,7 @@ $pass = 'sua_senha';
 ## 📁 Estrutura do projeto
 
 ```
-worldbarber/
+barbeariacardoso/
 ├── index.php           # Página principal (agendamento)
 ├── admin_login.php     # Login do administrador
 ├── admin_panel.php     # Painel administrativo
@@ -81,7 +81,7 @@ worldbarber/
 ├── db.php              # Conexão com banco de dados
 ├── config.php          # Credenciais (não versionado)
 ├── config.example.php  # Modelo de configuração
-├── world_barber.sql    # Estrutura do banco de dados
+├── barbeariacardoso.sql    # Estrutura do banco de dados
 └── icon.png            # Ícone do sistema
 ```
 
@@ -89,7 +89,7 @@ worldbarber/
 
 ## 🗄 Banco de dados
 
-O arquivo `world_barber.sql` contém toda a estrutura necessária para criar as tabelas:
+O arquivo `barbeariacardoso.sql` contém toda a estrutura necessária para criar as tabelas:
 
 - `bookings` — agendamentos pendentes
 - `received_bookings` — atendimentos realizados
@@ -108,4 +108,4 @@ O arquivo `world_barber.sql` contém toda a estrutura necessária para criar as 
 - Proteção CSRF no painel administrativo
 - Prepared statements em todas as queries (proteção SQL injection)
 - Credenciais do banco separadas do código versionado
-"# worldbarber" 
+"# barbeariacardoso" 
