@@ -22,7 +22,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<<<<<<< HEAD
 <title>Barbearia Cardoso — Acesso</title>
+=======
+<title>World Barber — Acesso</title>
+>>>>>>> e1591234bfc477d44c6b084a1224f732161c7ca9
 <link rel="icon" type="image/png" href="icon.png">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

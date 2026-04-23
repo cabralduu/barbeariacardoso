@@ -39,7 +39,11 @@ $page = $_GET['page'] ?? 'dashboard';
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<<<<<<< HEAD
 <title>Barbearia Cardoso— Admin</title>
+=======
+<title>World Barber — Admin</title>
+>>>>>>> e1591234bfc477d44c6b084a1224f732161c7ca9
 <link rel="icon" type="image/png" href="icon.png">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
@@ -245,7 +249,11 @@ $page = $_GET['page'] ?? 'dashboard';
 
   <!-- Sidebar -->
   <aside class="sidebar">
+<<<<<<< HEAD
     <div class="sidebar-logo">Barbearia Cardoso</div>
+=======
+    <div class="sidebar-logo">World Barber</div>
+>>>>>>> e1591234bfc477d44c6b084a1224f732161c7ca9
     <nav>
       <?php
       $nav = [
@@ -311,7 +319,11 @@ $page = $_GET['page'] ?? 'dashboard';
     <?php foreach ($bookings as $b):
       $svc  = get_service_by_id($b['service_id']);
       $phone = preg_replace('/\D/', '', $b['phone']);
+<<<<<<< HEAD
       $msg  = "Olá {$b['name']}!\n\nLembrete do seu agendamento na *Barbearia Cardoso*.\n\n✂️ Serviço: {$svc['name']}\n📅 Data: ".date('d/m/Y', strtotime($b['date']))."\n🕒 Horário: {$b['time']}\n\nTe esperamos!";
+=======
+      $msg  = "Olá {$b['name']}!\n\nLembrete do seu agendamento na *World Barber*.\n\n✂️ Serviço: {$svc['name']}\n📅 Data: ".date('d/m/Y', strtotime($b['date']))."\n🕒 Horário: {$b['time']}\n\nTe esperamos!";
+>>>>>>> e1591234bfc477d44c6b084a1224f732161c7ca9
       $wa   = "https://wa.me/{$phone}?text=".urlencode($msg);
     ?>
       <div class="card card-accent-blue">
@@ -361,7 +373,11 @@ $page = $_GET['page'] ?? 'dashboard';
     <div class="cards">
     <?php foreach ($clients as $c):
       $phone = preg_replace('/\D/', '', $c['phone']);
+<<<<<<< HEAD
       $msg   = "Olá {$c['name']}! 💈\n\nAqui é da *Barbearia Cardoso*.\nTemos novos horários disponíveis — bora renovar o visual?";
+=======
+      $msg   = "Olá {$c['name']}! 💈\n\nAqui é da *World Barber*.\nTemos novos horários disponíveis — bora renovar o visual?";
+>>>>>>> e1591234bfc477d44c6b084a1224f732161c7ca9
       $wa    = "https://wa.me/{$phone}?text=".urlencode($msg);
     ?>
       <div class="card card-accent-yellow">

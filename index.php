@@ -84,7 +84,11 @@ if (isset($_GET['cancel_id'])) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<<<<<<< HEAD
 <title>Barbearia Cardoso</title>
+=======
+<title>World Barber</title>
+>>>>>>> e1591234bfc477d44c6b084a1224f732161c7ca9
 <link rel="icon" type="image/png" href="icon.png">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -225,7 +229,11 @@ if (isset($_GET['cancel_id'])) {
 <div class="wrap">
 
   <header>
+<<<<<<< HEAD
     <h1>Barbearia Cardoso</h1>
+=======
+    <h1>World Barber</h1>
+>>>>>>> e1591234bfc477d44c6b084a1224f732161c7ca9
     <a href="admin_login.php">Loja</a>
   </header>
 
